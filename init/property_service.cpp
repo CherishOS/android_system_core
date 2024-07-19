@@ -1464,6 +1464,9 @@ static void SetSafetyNetProps() {
     InitPropertySet("vendor.boot.verifiedbootstate", "green");
     InitPropertySet("oplusboot.verifiedbootstate", "green");
     InitPropertySet("sys.oem_unlock_allowed", "0");
+#ifdef SPOOF_FIRST_API_LEVEL_32
+    InitPropertySet("ro.product.first_api_level", "32");
+#endif
 }
 
 void PropertyInit() {
