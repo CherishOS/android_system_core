@@ -1499,6 +1499,8 @@ void PropertyInit() {
     ProcessKernelCmdline();
     ProcessBootconfig();
 
+    vendor_process_bootenv();
+
     // Propagate the kernel variables to internal variables
     // used by init as well as the current required properties.
     ExportKernelBootProps();
