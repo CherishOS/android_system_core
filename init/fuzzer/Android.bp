@@ -30,7 +30,6 @@ cc_defaults {
     shared_libs: [
         "libbase",
         "libfs_mgr",
-        "libkeyutils",
         "liblog",
         "libprocessgroup",
         "libselinux",
